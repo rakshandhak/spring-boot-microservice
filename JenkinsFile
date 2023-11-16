@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage("Checkout from SCM") {
       steps {
-        git branch: 'main', credentialsId: 'GitHubcredentials', url: 'https://github.com/rakshandhak/spring-boot-application.git'
+        git branch: 'main', credentialsId: 'GitHubcredentials', url: 'https://github.com/rakshandhak/spring-boot-microservice.git'
       }
     }
     stage("Build Application") {
